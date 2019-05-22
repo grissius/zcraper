@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Project template
 
 [Unreleased]: https://github.com/grissius/zcrapper/compare/v0.0.0...HEAD
-[0.0.0]: https://github.com/grissius/zcrapper/compare/67c5ebd...v0.0.0
+[0.0.0]: https://github.com/grissius/zcrapper/compare/364c92a...v0.0.0
