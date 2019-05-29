@@ -23,7 +23,11 @@
     "lint": "tslint -t codeFrame -p .",
     "prepare": "npm run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cosmas": "^1.0.3",
+    "desmond": "^0.5.6",
+    "node-html-parser": "^1.1.15"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "husky": "^1.3.1",

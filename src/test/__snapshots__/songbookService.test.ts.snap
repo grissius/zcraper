@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`songbookService getSongbook 1`] = `
+Object {
+  "options": Object {
+    "styles": Array [
+      "<style type=\\"text/css\\">
+			body{padding:20px;font-family:\\"Open Sans\\",sans-serif;font-size:11pt;}
+			.chords{vertical-align:baseline;}
+
+.chords .linepart{display:inline-block;vertical-align:baseline;overflow:visible;}
+.chords .chord{vertical-align:top;white-space:nowrap}
+.chords .diagram{height:120px;font-style:normal;}
+
+.chords .part{display:block;position:relative;margin-left:50px;}
+.chords .part .label{position:relative;width:0;display:inline-block;vertical-align:baseline;}
+.chords .part .label span{position:absolute;bottom:0;right:5px;}
+.chords .part.float{float:right;clear:right;}
+.chords .part.clear{float:none;clear:both;}
+
+.chords .tab{font-family:Courier New,monospaced;white-space:nowrap;}
+.chords .tab.block{display:block;margin-left:50px;}
+
+.chords .section{margin-bottom:10px;}
+.chords .column{display:inline-block;vertical-align:top;}
+
+@media screen and (max-width: 800px){
+	.chords .column{display:block;width:auto !important;}
+}
+
+.chords.preview .chord span:hover{
+	background-color:#ffbc2c;
+	color:#fff;
+	position:relative;
+}
+.chords.preview .chord span:hover::after {
+    content: \\"akord\\";
+    font-size: .5em;
+    position: absolute;
+    top: 0;
+    left: 100%;
+		color:#ffbc2c;	
+    font-style: normal;
+    padding: 0 2px;
+}
+
+
+.chords.preview .part{
+	border:1px solid transparent;
+}
+
+.chords.preview .part:hover{
+	border:1px solid #ccc;
+}
+
+.chords.preview .part:hover::before {
+    content: \\"blok\\";
+    font-size: .8em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ccc;
+    font-style: normal;
+    padding: 0 2px;
+}
+
+.chords.preview .part.verse:hover::before {content: \\"sloka\\";}
+.chords.preview .part.chorus:hover::before {content: \\"refrén\\";}
+.chords.preview .part.textblock:hover::before {content: \\"textový blok\\";}
+
+			
+			h1{text-align:center;font-size:5em;font-weight:normal;}
+			#datum{text-align:center;color:#ccc;}
+			
+			h2{margin:0 0 10px 0;padding:0 0 5px 0;}
+			.akordy,dl.obsah{margin-top:20px;}
+
+			#obsah .page_number{float:right;}
+			#pisnicky .page_number{float:right;color:#ccc;}
+
+			@page{
+				size:A4;
+
+			}
+		</style>",
+      "<style type=\\"text/css\\" media=\\"screen\\">
+			.obsah{margin-top:20px;padding-top:10px;border-top:1px dashed #333;}						
+			.pisnicka{margin-top:20px;padding-top:10px;border-top:1px dashed #333;}						
+		</style>",
+      "<style type=\\"text/css\\" media=\\"print\\">
+			body{padding:0;}	
+			.obsah{page-break-before: always;}						
+			.pisnicka{page-break-before: always;border-bottom:1px solid #ccc;}
+			.pisnicka h2{border-bottom:1px solid #000;}
+			a.obsah{display:none;}
+			.obsah a{text-decoration:none;}
+
+
+
+			
+		</style>",
+    ],
+  },
+  "songs": Array [
+    Object {
+      "author": "Asonance",
+      "chords": "<div class=\\"chords\\" itemprop=\\"text\\">
+		<div class=\\"song\\"><div class=\\"section\\"><div class=\\"column\\" style=\\"width:100%;\\"><div class=\\"part verse\\"><span class=\\"label\\"><span>1.</span> </span><span class=\\"linepart\\">Zuzana </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Dmi</span> </span><br />byla dívka, </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>C</span> </span><br />která žila v </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Dmi</span> </span><br />Amesbury, </span><br /><span class=\\"linepart\\">s jasnýma </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>F</span> </span><br />očima a </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>C</span> </span><br />řečmi pánům </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Dmi</span> </span><br />navzdory, </span><br /><span class=\\"linepart\\">souse</span><span class=\\"linepart\\"><span class=\\"chord\\"><span>F</span> </span><br />dé o ní </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>C</span> </span><br />říkali, že </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Dmi</span> </span><br />temná kouzla </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Ami</span> </span><br />zná </span><br /><span class=\\"linepart\\">a </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Bb</span> </span><br />že se lidem </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Ami</span> </span><br />vyhýbá a s </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Bb</span> </span><br />ďáblem </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>C</span> </span><br />pletky </span><span class=\\"linepart\\"><span class=\\"chord\\"><span>Dmi(G)</span> </span><br />má. </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>2.</span> </span><span class=\\"linepart\\">Onoho léta náhle mor dobytek zachvátil </span><br /><span class=\\"linepart\\">a pověrčivý lid se na pastora obrátil, </span><br /><span class=\\"linepart\\">že znají tu moc nečistou, jež krávy zabíjí, </span><br /><span class=\\"linepart\\">a odkud ta moc vychází, to každý dobře ví. </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>3.</span> </span><span class=\\"linepart\\">Tak Zuzanu hned před tribunál předvést nechali, </span><br /><span class=\\"linepart\\">a když ji vedli městem, všichni kolem volali: </span><br /><span class=\\"linepart\\">„Už konec je s tvým řáděním, už nám neuškodíš, </span><br /><span class=\\"linepart\\">teď na své cestě poslední do pekla poletíš!\\" </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>4.</span> </span><span class=\\"linepart\\">Dosvědčil jeden sedlák, že zná její umění, </span><br /><span class=\\"linepart\\">ďábelským kouzlem prý se v netopýra promění </span><br /><span class=\\"linepart\\">a v noci nad krajinou létává pod černou oblohou, </span><br /><span class=\\"linepart\\">sedlákům krávy zabíjí tou mocí čarovnou. </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>5.</span> </span><span class=\\"linepart\\">Jiný zas na kříž přísahal, že její kouzla zná, </span><br /><span class=\\"linepart\\">v noci se v černou kočku mění dívka líbezná, </span><br /><span class=\\"linepart\\">je třeba jednou provždy ukončit ďábelské řádění, </span><br /><span class=\\"linepart\\">a všichni křičeli jako posedlí:„Na šibenici s ní!\\" </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>6.</span> </span><span class=\\"linepart\\">Spektrální důkazy pečlivě byly zváženy, </span><br /><span class=\\"linepart\\">pak z tribunálu povstal starý soudce vážený: </span><br /><span class=\\"linepart\\">„Je přece v knize psáno: nenecháš čarodějnici žít </span><br /><span class=\\"linepart\\">a před ďáblovým učením budeš se na pozoru mít!\\" </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>7.</span> </span><span class=\\"linepart\\">Zuzana stála krásná s hlavou hrdě vztyčenou </span><br /><span class=\\"linepart\\">a její slova zněla klenbou s tichou ozvěnou: </span><br /><span class=\\"linepart\\">„Pohrdám vámi, neznáte nic nežli samou lež a klam, </span><br /><span class=\\"linepart\\">pro tvrdost vašich srdcí jen, jen pro ni umírám!\\" </span><br /><br /></div><div class=\\"part verse\\"><span class=\\"label\\"><span>8.</span> </span><span class=\\"linepart\\">Tak vzali Zuzanu na kopec pod šibenici </span><br /><span class=\\"linepart\\">a všude kolem ní se sběhly davy běsnící, </span><br /><span class=\\"linepart\\">a ona stála bezbranná, však s hlavou vztyčenou, </span><br /><span class=\\"linepart\\">zemřela tiše samotná pod letní oblohou … </span></div></div></div></div>	</div>",
+      "id": "pisnicka_723",
+      "title": "Čarodejnice z Amesbury",
+    },
+  ],
+  "title": "Silmaril",
+}
+`;
