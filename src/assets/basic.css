@@ -1,0 +1,24 @@
+#content > div {
+    page-break-before: always;
+}
+#toc {
+    page-break-before: always;
+}
+#title-page {
+    text-align: center;
+    width: 470px;
+    margin: auto;
+}
+body {
+    counter-reset: song;
+}
+#content h2::after {
+    counter-increment: song;
+    content: counter(song);
+    right: 0;
+    position: absolute;
+}
+h2 {
+    position: relative;
+    border-bottom: 1px solid black;
+}

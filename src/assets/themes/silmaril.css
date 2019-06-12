@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900|Inconsolata:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+#title-page img {
+    margin-top: 50px;
+}
+#title-page h1 {
+    margin-bottom: 0;
+}
+#title-page h2 {
+    margin: 0;
+}
+.chords .chord {
+    font-weight: 600;
+}
+h2 {
+    font-weight: 300;
+    font-family: Roboto;
+    margin-bottom: 35px;
+}
+.chords .tab {
+    font-family: Inconsolata;
+    font-size: 13px;
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}

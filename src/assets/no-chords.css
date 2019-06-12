@@ -1,0 +1,3 @@
+span.linepart br, span.linepart .chord, .tab, span.tab + br, .diagram, span.diagram + br {
+    display: none;
+}
