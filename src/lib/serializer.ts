@@ -7,11 +7,11 @@ ${sb.options.styles.join('')}
 </head>
 <body>
     <div id="title-page">
-        <img src="https://i.imgur.com/oWj3Ecr.png" />
-        <h1>${sb.title}</h1>
-        <h2>${sb.subtitle}</h2>
-        <p>${sb.meta}</p>
-        <p>Creted with ️️<a href="http://zpevniky.com">zpevniky.com</a> and <a href="https://github.com/grissius/zcraper">grissius/zcraper</a></p>
+        ${sb.options.img && `<img src="${sb.options.img}" />`}
+        <h1>${sb.title || ''}</h1>
+        <h2>${sb.subtitle || ''}</h2>
+        <p>${[sb.version, sb.date, sb.author].filter(x => x).join(', ')}</p>
+        <p>${sb.credits || ''}</p>
     </div>
     <div id="toc">
         <h2>Obsah</h2>
