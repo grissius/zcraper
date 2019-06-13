@@ -3,6 +3,13 @@ import { Microservice } from 'desmond';
 import { HTMLElement, parse } from 'node-html-parser';
 import { loadCss } from './helpers';
 
+export interface Song {
+    author: string;
+    title: string;
+    chords: string;
+    id: string;
+}
+
 export interface SongBook {
     title: string;
     subtitle?: string;
@@ -10,7 +17,7 @@ export interface SongBook {
     version?: string;
     credits?: string;
     date?: string;
-    songs: { author: string; title: string; chords: string; id: string }[];
+    songs: Song[];
     options: {
         styles: string[];
         img?: string;
