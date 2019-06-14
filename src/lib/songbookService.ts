@@ -55,3 +55,5 @@ export class SongbookService extends Microservice {
         };
     }
 }
+
+export const songbookService = new SongbookService();

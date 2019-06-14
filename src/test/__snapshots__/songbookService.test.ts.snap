@@ -3,7 +3,7 @@
 exports[`songbookService getSongbook 1`] = `
 Object {
   "credits": "Creted with ️️<a href=\\"http://zpevniky.com\\">zpevniky.com</a> and <a href=\\"https://github.com/grissius/zcraper\\">grissius/zcraper</a>",
-  "date": "6/13/2019",
+  "date": Any<String>,
   "options": Object {
     "styles": Array [
       "<style type=\\"text/css\\">

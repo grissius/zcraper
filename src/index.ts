@@ -1,7 +1,7 @@
-import { SongbookServiceMock } from '../test/mock/songbookServiceMock';
-import { compose, loadCss, renameSongs, saveSongbook, sortSongs } from './helpers';
+import { compose, loadCss, renameSongs, saveSongbook, sortSongs } from './lib/helpers';
+import { songbookServiceMock } from './test/mock/songbookServiceMock';
 
-const silmarilSongbook = compose(
+const myTransformations = compose(
     sb => {
         sb.subtitle = 'Táborový zpěvník';
         sb.version = '1.0.0 Mockingjay';
@@ -17,13 +17,12 @@ const silmarilSongbook = compose(
     sortSongs((a, b) => a.title.localeCompare(b.title))
 );
 
-const ss = new SongbookServiceMock();
 (async () => {
-    const sb = await ss.getSongbook(171);
-    saveSongbook(sb, { fns: [silmarilSongbook], filename: 'silmaril-chords.html' });
+    const sb = await songbookServiceMock.getSongbook(171);
+    saveSongbook(sb, { fns: [myTransformations], filename: 'silmaril-chords.html' });
     saveSongbook(sb, {
         fns: [
-            silmarilSongbook,
+            myTransformations,
             sb => {
                 sb.options.styles.push(loadCss('no-chords.css'));
                 return sb;
