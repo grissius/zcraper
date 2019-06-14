@@ -6,7 +6,7 @@
   "contributors": [
     "Jaroslav Šmolík <grissius@gmail.com>"
   ],
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "engines": {
     "node": "^10.14.0"
   },
@@ -18,7 +18,8 @@
   "keywords": [],
   "scripts": {
     "build": "tsc",
-    "test": "NODE_PATH=src jest",
+    "start": "node dist/index.js",
+    "test": "jest",
     "test:coverage": "npm run test -- --collectCoverage",
     "lint": "tslint -t codeFrame -p .",
     "prepare": "npm run build"
