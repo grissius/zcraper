@@ -4,7 +4,7 @@ import { songbookServiceMock } from './test/mock/songbookServiceMock';
 const myTransformations = compose(
     sb => {
         sb.subtitle = 'Táborový zpěvník';
-        sb.version = '1.0.0 Mockingjay';
+        sb.version = '1.0.1 Mockingjay';
         sb.author = 'Jaroslav Šmolík &lt;grissius@gmail.com&gt;';
         sb.options.img = 'https://i.imgur.com/oWj3Ecr.png';
         sb.options.styles.push(loadCss('themes/silmaril.css'));
@@ -14,7 +14,13 @@ const myTransformations = compose(
         'Protestsong (Malý kluk s černou hřívou)': 'Protestsong',
         'Vítr to Ví': 'Míle',
     }),
-    sortSongs((a, b) => a.title.localeCompare(b.title))
+    sortSongs(
+        (a, b) =>
+            ((a, b) => {
+                const score = (s: string) => (s === 'Žádám' ? -Infinity : s === 'Hymny' ? Infinity : 0);
+                return score(a.title) - score(b.title);
+            })(a, b) || a.title.localeCompare(b.title)
+    )
 );
 
 (async () => {

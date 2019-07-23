@@ -9,7 +9,7 @@
 #title-page h2 {
     margin: 0;
 }
-.chords .chord {
+.chords .chord, .chords .label span {
     font-weight: 600;
 }
 h2 {
